@@ -1,0 +1,11 @@
+# Module configuration
+module.tx_brainmulticolumntogridelements {
+	persistence {
+		storagePid = {$module.tx_brainmulticolumntogridelements.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_brainmulticolumntogridelements.view.templateRootPath}
+		partialRootPath = {$module.tx_brainmulticolumntogridelements.view.partialRootPath}
+		layoutRootPath = {$module.tx_brainmulticolumntogridelements.view.layoutRootPath}
+	}
+}

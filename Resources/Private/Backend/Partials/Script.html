@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    brainMigration = {
+        collapse: function(id) {
+            var div = document.getElementById(id);
+            this.setDisplay(div.getElementsByClassName('detail'), 'none');
+            this.setDisplay(div.getElementsByClassName('no-detail'), 'inline-block');
+        },
+        expand: function(id) {
+            var div = document.getElementById(id);
+            this.setDisplay(div.getElementsByClassName('detail'), 'inline-block');
+            this.setDisplay(div.getElementsByClassName('no-detail'), 'none');
+        },
+        setDisplay: function(elements, style)
+        {
+            for (var i in elements) {
+                if (elements[i].style) {
+                    elements[i].style.display = style;
+                }
+            }
+        }
+    };
+</script>

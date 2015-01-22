@@ -1,0 +1,14 @@
+module.tx_brainmulticolumntogridelements {
+	view {
+		# cat=module.tx_brainmulticolumntogridelements/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:brainmulticolumntogridelements/Resources/Private/Backend/Templates/
+		# cat=module.tx_brainmulticolumntogridelements/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:brainmulticolumntogridelements/Resources/Private/Backend/Partials/
+		# cat=module.tx_brainmulticolumntogridelements/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:brainmulticolumntogridelements/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_brainmulticolumntogridelements//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

@@ -1,0 +1,14 @@
+config.tx_extbase{
+    persistence{
+        classes{
+
+            Tx_Brainmulticolumntogridelements_Domain_Model_Migration {
+                mapping {
+                    tableName = tt_content
+                    recordType = Tx_Brainmulticolumntogridelements_Migration
+                }
+            }
+            
+    	}
+    }
+}

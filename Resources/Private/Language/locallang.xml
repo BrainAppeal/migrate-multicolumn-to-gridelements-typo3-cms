@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Migrate Multicolumn to Gridelements extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_brainmulticolumntogridelements_domain_model_migration">Migration</label>
+			<label index="header_confirm">Confirm Migration</label>
+			<label index="header_execute">Migration executed</label>
+			<label index="header_prepare">Prepare Migration</label>
+			<label index="warning_confirm">Only proceed if you have database backups! Use at your own risk.</label>
+
+			<label index="change">Change</label>
+			<label index="submit">Submit</label>
+
+			<label index="error">Error</label>
+			<label index="error_colPos">Error determining colPos values used by Multicolumn.</label>
+			<label index="error_no_ge_config">No configured Gridelement layouts found.</label>
+			<label index="error_no_ge_containers">No Gridelement containers found.</label>
+			<label index="error_no_mc_containers">No Multicolumn containers found.</label>
+			<label index="error_no_mc_contents">No former Multicolumn contents found.</label>
+			<label index="TRUE">Yes</label>
+			<label index="FALSE">No</label>
+			<label index="availability">The following Gridelement layout IDs are mapped, but the layouts cannot be used. Please click on "Change" and configure available Gridelement layouts.</label>
+			<label index="hidden">Hidden.</label>
+			<label index="unavailable">Unavailable (deleted or not even created).</label>
+
+			<label index="changeContainerType">Container types changed from Multicolumn to gridelements_pi1</label>
+			<label index="configsOnPages">Different Multicolumn configurations</label>
+			<label index="config_on_pages">Found on page(s)</label>
+			<label index="config_type_collapse">Collapse Flexform config ↑</label>
+			<label index="config_type_expand">Expand Flexform config ↓</label>
+			<label index="copyParentIds">Parent IDs copied</label>
+			<label index="countConfigsOnPages">Number of different Multicolumn configurations</label>
+			<label index="countGridelementChildren">Number of children for Gridelement containers determined</label>
+			<label index="countMulticolumnElements">Number of Multicolumn elements</label>
+			<label index="explain_mapping"><![CDATA[Note that differences in flexform configurations do not necessitate a different rendering result in the front-end. You should look at examples from the pages listed for each configuration to determine if they really are different.
+
+All Multicolumn elements with configurations that are not mapped (by you) to a certain Gridelement layout will be assigned the standard Gridelement layout number. Thus, if you only need one Gridelement layout, you can leave all fields empty.
+
+Pages on which only one flexform configuration is used can be seen in bold print below. That way there is no risk of mixing different configurations up when viewing them in the front-end.]]></label>
+			<label index="isGridelementsInstalled">Gridelements installed</label>
+			<label index="map_to_ge_layout">Map to the following Gridelements layout (ID):</label>
+			<label index="standard_layout_number">Standard Gridelement layout number: </label>
+			<label index="transferNestedColumnPosition">Column positions of nested elements transfered to Gridelements standards</label>
+			<label index="type_number">Configuration type</label>
+                        <label index="defaultConfigUsed">Default configuration was used in the FlexForm</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_brainmulticolumntogridelements_domain_model_migration">Migration</label>
+			<label index="header_confirm">Migration bestätigen</label>
+			<label index="header_execute">Migration ausgeführt</label>
+			<label index="header_prepare">Migration vorbereiten</label>
+			<label index="warning_confirm">Bitte nur fortfahren, wenn Datenbank-Backups existieren! Benutzung auf eigene Gefahr.</label>
+
+			<label index="change">Ändern</label>
+			<label index="submit">Absenden</label>
+
+			<label index="error">Fehler</label>
+			<label index="error_colPos">Fehler beim Bestimmen der colPos-Werte, die von Multicolumn benutzt werden.</label>
+			<label index="error_no_ge_config">Keine konfigurierten Gridelement-Layouts gefunden.</label>
+			<label index="error_no_ge_containers">Keine Rasterelement-Behälter gefunden.</label>
+			<label index="error_no_mc_containers">Keine Multicolumn-Behälter gefunden.</label>
+			<label index="error_no_mc_contents">Keine ehemaligen Multicolumn-Inhalte gefunden.</label>
+			<label index="TRUE">Ja</label>
+			<label index="FALSE">Nein</label>
+			<label index="availability">Die folgenden Gridelement-Layout-IDs sind zugewiesen, aber die Layouts sind nicht benutzbar. Bitte mit "Ändern" zum vorherigen Schritt zurückkehren und verfügbare Gridelement-Layouts zuweisen.</label>
+			<label index="hidden">Inaktiv.</label>
+			<label index="unavailable">Nicht verfügbar (gelöscht oder gar nicht erst erstellt).</label>
+
+			<label index="changeContainerType">Elementtypen von Multicolumn zu gridelements_pi1 geändert</label>
+			<label index="configsOnPages">Die verschiedenen Multicolumn-Layouts</label>
+			<label index="config_on_pages">Gefunden auf Seite(n)</label>
+			<label index="config_type_collapse">Flexform-Konfiguration einklappen ↑</label>
+			<label index="config_type_expand">Flexform-Konfiguration ausklappen ↓</label>
+			<label index="copyParentIds">Parent-IDs kopiert</label>
+			<label index="countConfigsOnPages">Anzahl unterschiedlicher Multicolumn-Layouts</label>
+			<label index="countGridelementChildren">Anzahl der Kindelemente für alle Rasterelemente bestimmt</label>
+			<label index="countMulticolumnElements">Anzahl der Multicolumn-Elemente</label>
+			<label index="explain_mapping"><![CDATA[Bitte beachten, dass unterschiedliche Flexform-Konfigurationen nicht zwangsläufig zu einer unterschiedlichen Darstellung im Front-End führen. Am besten überprüfen Sie beispielhaft die Darstellung auf einigen Seiten, die bei jeder Konfiguration aufgelistet sind.
+
+Alle Multicolumn-Elemente mit Konfigurationen, die von Ihnen keinem bestimmten Layout zugeordnet werden, werden dem Standard-Gridelement-Layout zugeordnet. Wenn nur ein einziges Gridelement-Layout benötigt wird, können also alle Felder leer bleiben.
+
+In Fett dargestellt werden Seiten-IDs, auf denen nur eine Flexform-Konfiguration gefunden wurde, sodass beim Sichten im Front-End keine Verwechslungsgefahr besteht.]]></label>
+			<label index="isGridelementsInstalled">Gridelements ist installiert</label>
+			<label index="map_to_ge_layout">Den folgenden Gridelement-Layouts zuordnen (ID):</label>
+			<label index="standard_layout_number">Standard-Gridelement-Layout ID: </label>
+			<label index="transferNestedColumnPosition">Spaltennummern der eingeschachtelten Elemente den Gridelement-Standards angepasst</label>
+			<label index="type_number">Konfigurationstyp</label>
+                        <label index="defaultConfigUsed">In der Flexform wurde die Standardkonfiguration verwendet</label>
+		</languageKey>
+	</data>
+</T3locallang>

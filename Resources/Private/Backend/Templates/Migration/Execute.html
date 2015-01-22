@@ -1,0 +1,19 @@
+<f:layout name="Default" />
+
+<f:section name="iconButtons">
+</f:section>
+
+<f:section name="content">
+    <h3>{f:translate(key: 'header_execute')}</h3>
+    <div class="results">
+        <f:for each="{results}" as="result" key="label">
+            <span>{f:translate(key: label)}: {result}</span><br />
+        </f:for>
+        <br />
+    </div>
+
+    <f:if condition="{error}">
+        <h4>{f:translate(key: 'error')}</h4>
+        <div>{f:translate(key: error)}</div><br />
+    </f:if>
+</f:section>

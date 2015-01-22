@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for backend module Migrate Multicolumn to Gridelements belonging to extension 'brainmulticolumntogridelements'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+		<label index="mlang_tabs_tab">Migrate Multicolumn to Gridelements</label>
+			<label index="mlang_labels_tabdescr">Migrates multicolumn containers to gridelements containers (including their contents)</label>
+			<label index="mlang_labels_tablabel"></label>
+		</languageKey>
+		<languageKey index="de" type="array">
+		<label index="mlang_tabs_tab">Migriere Multicolumn nach Gridelements</label>
+			<label index="mlang_labels_tabdescr">Wandelt Multicolumn-Inhaltselemente in Gridelements-Inhaltselemente um (mitsamt Inhalt)</label>
+			<label index="mlang_labels_tablabel"></label>
+		</languageKey>
+	</data>
+</T3locallang>

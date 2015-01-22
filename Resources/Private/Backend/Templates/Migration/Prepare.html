@@ -1,0 +1,73 @@
+<f:layout name="Default" />
+
+<f:section name="iconButtons">
+</f:section>
+
+<f:section name="content">
+    <h3>{f:translate(key: 'header_prepare')}</h3>
+    <div class="results">
+        <f:for each="{results}" as="result" key="label">
+            <span>{f:translate(key: label)}: {result}</span><br />
+        </f:for>
+        <br />
+    </div>
+	<f:form method="post" action="confirm" objectName="mcToGeMapping">
+        <div class="ff-configs">
+            <f:render partial="Script" />
+            <span><strong><f:translate key="configsOnPages" /></strong></span><br />
+            <span>{f:translate(key: 'explain_mapping') -> f:format.nl2br()}</span><br /><br />
+            <label for="standard_layout_number"><strong><f:translate key="standard_layout_number" /></strong></label>
+            <f:form.textfield size="10" id="standard_layout_number" name="standardLayoutNumber" property="standardLayoutNumber" value="{standardLayoutNumber}" />
+            <hr />
+
+            <f:for each="{ffConfig}" as="ffc" key="key" iteration="iterator">
+                {f:translate(key: "type_number")}
+                <div id="config-type-{iterator.index}" class="config-type">
+                    <div class="header">
+                        <span><em>{f:translate(key: 'type_number')} <strong>{iterator.index}</strong></em> &mdash; </span>
+                        <label for="map-{iterator.index}"><f:translate key="map_to_ge_layout" /></label>
+                        <f:if condition="{restored}">
+                            <f:then>
+                                <f:for each="{mcToGeMapping}" as="confVal" key="confKey">
+                                    <f:if condition="{confVal}">
+                                        <f:if condition="{confKey} == {iterator.index}">
+                                            <f:form.textfield id="map-{iterator.index}" size="10" property="{iterator.index}" name="{iterator.index}" value="{confVal}" />
+                                        </f:if>
+                                    </f:if>
+                                </f:for>
+                            </f:then>
+                            <f:else>
+                                <f:form.textfield size="10" id="map-{iterator.index}" property="{iterator.index}" name="{iterator.index}" value="" />
+                            </f:else>
+                        </f:if>
+                        <f:if condition="{ffc.flexform}">
+                            <div class="toggle">
+                                <span class="expand no-detail" style="cursor: pointer;" onclick="brainMigration.expand('config-type-{iterator.index}');">{f:translate(key: 'config_type_expand')}</span>
+                                <span class="collapse detail" onclick="brainMigration.collapse('config-type-{iterator.index}');" style="cursor: pointer; display: none;">{f:translate(key: 'config_type_collapse')}</span>
+                            </div>
+                        </f:if>
+                    </div>
+                    <f:if condition="{ffc.flexform}">
+                        <f:then>
+                        <div class="flexform detail" style="display: none; border: solid 1px #000000;">
+                            <pre>{ffc.flexform}</pre>
+                        </div>
+                        </f:then>
+                        <f:else>
+                            <f:translate key="defaultConfigUsed" />
+                        </f:else>
+                    </f:if>
+                    <f:form.hidden name="key-{iterator.index}" value="key" />
+                </div><br />
+                <div class="pages">
+                    <f:if condition="{ffc.pages}">
+                        <f:format.html>{f:translate(key: 'config_on_pages')} {ffc.pages}</f:format.html>
+                    </f:if>
+                </div>
+                <hr />
+            </f:for>
+            <br />
+        </div>
+        <f:form.submit value="{f:translate(key: 'submit')}" />
+	</f:form>
+</f:section>
